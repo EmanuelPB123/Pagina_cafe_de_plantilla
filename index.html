@@ -1,0 +1,195 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COffE</title>
+    <!--link rel="stylesheet" href=""-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" type="image/x-icon"
+        href="img/plantilla-del-icono-vector-de-logo-template-la-taza-café-114183543.jpg">
+    <style>
+        body,
+        html {
+            height: 100%;
+            font-family: "Inconsolata", sans-serif;
+        }
+
+        .bgimg {
+            background-position: center;
+            background-size: cover;
+            background-image: url("img/1366_2000.jpg");
+            min-height: 75%;
+        }
+
+        .menu {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s3">
+                <a href="#" class="w3-button w3-block w3-black">INICIO</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#about" class="w3-button w3-block w3-black">ACERCA DE</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#where" class="w3-button w3-block w3-black">DONDE</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+            <span class="w3-tag">Abierto dede las 6am hasta las 5pm</span>
+        </div>
+        <div class="w3-display-middle w3-center">
+            <span class="w3-text-white" style="font-size:90px"><br>COffE</span>
+        </div>
+        <div class="w3-display-bottomright w3-center w3-padding-large">
+            <span class="w3-text-white">Rawson, 1015</span>
+        </div>
+    </header>
+
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand w3-grayscale w3-large">
+
+        <!-- About Container -->
+        <div class="w3-container" id="about">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ACERCA DE COffE</span></h5>
+                <p>El Café fue fundado en blabla por el Sr. Smith en lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Además de nuestro menú completo de espresso y bar, servimos sándwiches recién hechos para el desayuno
+                    y el almuerzo, así como una selección de acompañamientos y ensaladas y otras cosas buenas.</p>
+                <div class="w3-panel w3-leftbar w3-light-grey">
+                    <p><i>"Use productos de la naturaleza por lo que vale, pero nunca demasiado temprano ni demasiado
+                            tarde". Fresco es el nuevo dulce..</i></p>
+                    <p>Chef, Coffeeist and Owner: Liam Brown</p>
+                </div>
+                <img src="img/Bar-moderno-con-barra-blanca-973x649.jpg" style="width:100%;max-width:1000px"
+                    class="w3-margin-top">
+                <p><strong>Abierto :</strong> todos los dias desde 6am hasta 5pm.</p>
+                <p><strong>Address:</strong> Rawson, 1015</p>
+            </div>
+        </div>
+
+        <!-- Menu Container -->
+        <div class="w3-container" id="menu">
+            <div class="w3-content" style="max-width:700px">
+
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MENÚ</span></h5>
+
+                <div class="w3-row w3-center w3-card w3-padding">
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+                        <div class="w3-col s6 tablink">Comida</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+                        <div class="w3-col s6 tablink">Bebidas</div>
+                    </a>
+                </div>
+
+                <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Bread Basket</h5>
+                    <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+
+                    <h5>Miel Almond Granola con Frutas</h5>
+                    <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                    <br>
+
+                    <h5>Belgian Waffle</h5>
+                    <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+
+                    <h5>Scrambled eggs</h5>
+                    <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                    <br>
+
+                    <h5>Panqueques de arandano</h5>
+                    <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+                </div>
+
+                <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Coffee</h5>
+                    <p class="w3-text-grey">Regular coffee 2.50</p><br>
+
+                    <h5>Chocolate</h5>
+                    <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+
+                    <h5>Corretto</h5>
+                    <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+
+                    <h5>Té helado</h5>
+                    <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+
+                    <h5>Soda</h5>
+                    <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+                </div>
+                <img src="img/ganos-de-cafe-blog.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+            </div>
+        </div>
+
+        <!-- Contact/Area Container -->
+        <div class="w3-container" id="where" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">DONDE ENCONTRARNOS</span></h5>
+                <p>Encuéntrenos en alguna dirección en algún lugar.</p>
+                <img src="img/unnamed.jpg" class="w3-image" style="width:100%">
+                <p><span class="w3-tag">HEY!</span> Ofrecemos catering de servicio completo para cualquier evento,
+                    grande o pequeño. Entendemos sus necesidades y nos ocuparemos de la comida para satisfacer los
+                    criterios más importantes de todos, tanto en apariencia como en sabor.</p>
+                <p><strong>Reserve</strong> una mesa, pregunte por el especial de hoy o simplemente envíenos un mensaje:
+                </p>
+                <form action="/action_page.php" target="_blank">
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nombre" required
+                            name="Name"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="¿Cuantas personas?"
+                            required name="People"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time"
+                            required name="date" value="2020-11-16T20:00"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text"
+                            placeholder="Mensaje \ Especificaciones" required name="Message"></p>
+                    <p><button class="w3-button w3-black" type="submit">ENVIAR</button></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+        <p>Creado por <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                class="w3-hover-text-green">graphics.com</a></p>
+    </footer>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
+
+</body>
